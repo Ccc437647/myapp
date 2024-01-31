@@ -1,10 +1,10 @@
 "use strict";
-(wx["webpackJsonp"] = wx["webpackJsonp"] || []).push([["pages/act/index"],{
+(wx["webpackJsonp"] = wx["webpackJsonp"] || []).push([["pages/login/index"],{
 
-/***/ "./node_modules/@tarojs/taro-loader/lib/entry-cache.js?name=pages/act/index!./src/pages/act/index.tsx":
-/*!************************************************************************************************************!*\
-  !*** ./node_modules/@tarojs/taro-loader/lib/entry-cache.js?name=pages/act/index!./src/pages/act/index.tsx ***!
-  \************************************************************************************************************/
+/***/ "./node_modules/@tarojs/taro-loader/lib/entry-cache.js?name=pages/login/index!./src/pages/login/index.tsx":
+/*!****************************************************************************************************************!*\
+  !*** ./node_modules/@tarojs/taro-loader/lib/entry-cache.js?name=pages/login/index!./src/pages/login/index.tsx ***!
+  \****************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -255,24 +255,24 @@ function Act() {
 
 /***/ }),
 
-/***/ "./src/pages/act/index.tsx":
-/*!*********************************!*\
-  !*** ./src/pages/act/index.tsx ***!
-  \*********************************/
+/***/ "./src/pages/login/index.tsx":
+/*!***********************************!*\
+  !*** ./src/pages/login/index.tsx ***!
+  \***********************************/
 /***/ (function(__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 
 /* harmony import */ var _tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @tarojs/runtime */ "webpack/container/remote/@tarojs/runtime");
 /* harmony import */ var _tarojs_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_tarojs_taro_loader_lib_entry_cache_js_name_pages_act_index_index_tsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/@tarojs/taro-loader/lib/entry-cache.js?name=pages/act/index!./index.tsx */ "./node_modules/@tarojs/taro-loader/lib/entry-cache.js?name=pages/act/index!./src/pages/act/index.tsx");
+/* harmony import */ var _node_modules_tarojs_taro_loader_lib_entry_cache_js_name_pages_login_index_index_tsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../node_modules/@tarojs/taro-loader/lib/entry-cache.js?name=pages/login/index!./index.tsx */ "./node_modules/@tarojs/taro-loader/lib/entry-cache.js?name=pages/login/index!./src/pages/login/index.tsx");
 
 
-var config = {"navigationBarTitleText":"活动页面"};
+var config = {"navigationBarTitleText":"登陆页面"};
 
 
-var inst = Page((0,_tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__.createPageConfig)(_node_modules_tarojs_taro_loader_lib_entry_cache_js_name_pages_act_index_index_tsx__WEBPACK_IMPORTED_MODULE_1__["default"], 'pages/act/index', {root:{cn:[]}}, config || {}))
+var inst = Page((0,_tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__.createPageConfig)(_node_modules_tarojs_taro_loader_lib_entry_cache_js_name_pages_login_index_index_tsx__WEBPACK_IMPORTED_MODULE_1__["default"], 'pages/login/index', {root:{cn:[]}}, config || {}))
 
 
-/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_tarojs_taro_loader_lib_entry_cache_js_name_pages_act_index_index_tsx__WEBPACK_IMPORTED_MODULE_1__["default"]);
+/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_tarojs_taro_loader_lib_entry_cache_js_name_pages_login_index_index_tsx__WEBPACK_IMPORTED_MODULE_1__["default"]);
 
 
 /***/ })
@@ -280,7 +280,7 @@ var inst = Page((0,_tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__.createPageConfig
 },
 /******/ function(__webpack_require__) { // webpackRuntimeModules
 /******/ var __webpack_exec__ = function(moduleId) { return __webpack_require__(__webpack_require__.s = moduleId); }
-/******/ __webpack_require__.O(0, ["taro","vendors","common"], function() { return __webpack_exec__("./src/pages/act/index.tsx"); });
+/******/ __webpack_require__.O(0, ["taro","vendors","common"], function() { return __webpack_exec__("./src/pages/login/index.tsx"); });
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);

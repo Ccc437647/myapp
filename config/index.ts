@@ -124,13 +124,13 @@ export default defineConfig(async (merge, { command, mode }) => {
       output: {
         ios: './ios/main.jsbundle',
         iosAssetsDest: './ios',
-        android: './android/app/src/main/assets/index.android.bundle',
-        androidAssetsDest: './android/app/src/main/res',
+        android: '/Users/dev/Documents/taro-native-shell-0.70.0/android/app/src/main/assets/index.android.bundle',
+        androidAssetsDest: '/Users/dev/Documents/taro-native-shell-0.70.0/android/app/src/main/res',
         // iosSourceMapUrl: '',
         iosSourcemapOutput: './ios/main.map',
         // iosSourcemapSourcesRoot: '',
         // androidSourceMapUrl: '',
-        androidSourcemapOutput: './android/app/src/main/assets/index.android.map',
+        androidSourcemapOutput: '/Users/dev/Documents/taro-native-shell-0.70.0/android/app/src/main/assets/index.android.map',
         // androidSourcemapSourcesRoot: '',
       },
       postcss: {

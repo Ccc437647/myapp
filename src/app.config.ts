@@ -4,6 +4,7 @@ export default defineAppConfig({
     'pages/act/index',
     'pages/user/index',
     'pages/news/index',
+    'pages/login/index',
   ],
   tabBar: {
     custom: false,
@@ -33,8 +34,8 @@ export default defineAppConfig({
   },
   window: {
     backgroundTextStyle: 'light',
-    navigationBarBackgroundColor: '#fff',
+    navigationBarBackgroundColor: '#000',
     navigationBarTitleText: 'WeChat',
-    navigationBarTextStyle: 'black',
+    navigationBarTextStyle: 'white',
   }
 })

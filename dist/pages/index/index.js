@@ -10,9 +10,9 @@
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": function() { return /* binding */ Index; }
 /* harmony export */ });
-/* harmony import */ var E_code_myapp_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/regeneratorRuntime.js */ "./node_modules/@babel/runtime/helpers/esm/regeneratorRuntime.js");
-/* harmony import */ var E_code_myapp_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var E_code_myapp_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var _Users_dev_Documents_myapp_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/regeneratorRuntime.js */ "./node_modules/@babel/runtime/helpers/esm/regeneratorRuntime.js");
+/* harmony import */ var _Users_dev_Documents_myapp_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var _Users_dev_Documents_myapp_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @tarojs/taro */ "webpack/container/remote/@tarojs/taro");
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "webpack/container/remote/react");
@@ -35,33 +35,28 @@ function Index() {
       weekday: '',
       time: ''
     }),
-    _useState2 = (0,E_code_myapp_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_5__["default"])(_useState, 2),
+    _useState2 = (0,_Users_dev_Documents_myapp_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_5__["default"])(_useState, 2),
     dataTime = _useState2[0],
     setDateTime = _useState2[1];
   // 用户信息数据
   var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)({
       account: 'This is RN project ~'
     }),
-    _useState4 = (0,E_code_myapp_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_5__["default"])(_useState3, 2),
+    _useState4 = (0,_Users_dev_Documents_myapp_node_modules_babel_runtime_helpers_esm_slicedToArray_js__WEBPACK_IMPORTED_MODULE_5__["default"])(_useState3, 2),
     userInfo = _useState4[0],
     setUserInfo = _useState4[1];
-  // interface TimeResult {
-  //   code: number;
-  //   message: string;
-  //   result: Result;
-  // }
 
   // 页面跳转
-  var routeGo = function routeGo() {
-    _tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default().navigateTo({
-      url: '/pages/news/index'
+  var toLoginPage = function toLoginPage() {
+    _tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default().redirectTo({
+      url: '/pages/login/index'
     });
   };
 
   // 请求 - 获取每日时间
-  var getTime = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)( /*#__PURE__*/(0,E_code_myapp_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_6__["default"])( /*#__PURE__*/(0,E_code_myapp_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_7__["default"])().mark(function _callee() {
+  var getTime = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)( /*#__PURE__*/(0,_Users_dev_Documents_myapp_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_6__["default"])( /*#__PURE__*/(0,_Users_dev_Documents_myapp_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_7__["default"])().mark(function _callee() {
     var _yield$apiGetTime, result;
-    return (0,E_code_myapp_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_7__["default"])().wrap(function _callee$(_context) {
+    return (0,_Users_dev_Documents_myapp_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_7__["default"])().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
@@ -70,7 +65,8 @@ function Index() {
           _yield$apiGetTime = _context.sent;
           result = _yield$apiGetTime.result;
           setDateTime(result);
-        case 5:
+          console.log('res', result);
+        case 6:
         case "end":
           return _context.stop();
       }
@@ -78,15 +74,15 @@ function Index() {
   })), []);
 
   // 请求 - 删除用户动态
-  var delPersonDynamicList = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)( /*#__PURE__*/(0,E_code_myapp_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_6__["default"])( /*#__PURE__*/(0,E_code_myapp_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_7__["default"])().mark(function _callee3() {
+  var delPersonDynamicList = (0,react__WEBPACK_IMPORTED_MODULE_1__.useCallback)( /*#__PURE__*/(0,_Users_dev_Documents_myapp_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_6__["default"])( /*#__PURE__*/(0,_Users_dev_Documents_myapp_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_7__["default"])().mark(function _callee3() {
     var getUserInfo;
-    return (0,E_code_myapp_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_7__["default"])().wrap(function _callee3$(_context3) {
+    return (0,_Users_dev_Documents_myapp_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_7__["default"])().wrap(function _callee3$(_context3) {
       while (1) switch (_context3.prev = _context3.next) {
         case 0:
           getUserInfo = /*#__PURE__*/function () {
-            var _ref3 = (0,E_code_myapp_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_6__["default"])( /*#__PURE__*/(0,E_code_myapp_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_7__["default"])().mark(function _callee2() {
+            var _ref3 = (0,_Users_dev_Documents_myapp_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_6__["default"])( /*#__PURE__*/(0,_Users_dev_Documents_myapp_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_7__["default"])().mark(function _callee2() {
               var _yield$Taro$getStorag, data, q;
-              return (0,E_code_myapp_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_7__["default"])().wrap(function _callee2$(_context2) {
+              return (0,_Users_dev_Documents_myapp_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_7__["default"])().wrap(function _callee2$(_context2) {
                 while (1) switch (_context2.prev = _context2.next) {
                   case 0:
                     _context2.prev = 0;
@@ -102,14 +98,14 @@ function Index() {
                   case 7:
                     q = _context2.sent;
                     console.log('====================================');
-                    console.log('q', q);
+                    console.log('删除用户动态接口请求成功', q);
                     console.log('====================================');
                     _context2.next = 16;
                     break;
                   case 13:
                     _context2.prev = 13;
                     _context2.t0 = _context2["catch"](0);
-                    console.error('获取用户信息失败', _context2.t0);
+                    console.error('删除用户动态接口/获取用户信息失败', _context2.t0);
                   case 16:
                   case "end":
                     return _context2.stop();
@@ -137,6 +133,28 @@ function Index() {
   var useLogin = function useLogin() {
     delPersonDynamicList();
   };
+
+  // 清除用户登陆相关信息 - 退出登陆
+  var cleanUserMsg = /*#__PURE__*/function () {
+    var _ref4 = (0,_Users_dev_Documents_myapp_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_6__["default"])( /*#__PURE__*/(0,_Users_dev_Documents_myapp_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_7__["default"])().mark(function _callee4() {
+      return (0,_Users_dev_Documents_myapp_node_modules_babel_runtime_helpers_esm_regeneratorRuntime_js__WEBPACK_IMPORTED_MODULE_7__["default"])().wrap(function _callee4$(_context4) {
+        while (1) switch (_context4.prev = _context4.next) {
+          case 0:
+            console.log('====================================');
+            console.log(1111111);
+            console.log('====================================');
+            _context4.next = 5;
+            return _tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default().clearStorage();
+          case 5:
+          case "end":
+            return _context4.stop();
+        }
+      }, _callee4);
+    }));
+    return function cleanUserMsg() {
+      return _ref4.apply(this, arguments);
+    };
+  }();
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_components_cross_platform__WEBPACK_IMPORTED_MODULE_3__.View, {
     altClassName: "min-h-full",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(_components_cross_platform__WEBPACK_IMPORTED_MODULE_3__.View, {
@@ -149,8 +167,8 @@ function Index() {
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_cross_platform__WEBPACK_IMPORTED_MODULE_3__.View, {
       altClassName: "h-20 leading-_5rem_ bg-slate-700 text-white",
-      onClick: routeGo,
-      children: "\u8DF3\u8F6C\u5230news\u9875\u9762"
+      onClick: toLoginPage,
+      children: "\u8DF3\u8F6C\u5230\u767B\u9646\u9875\u9762"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_cross_platform__WEBPACK_IMPORTED_MODULE_3__.View, {
       altClassName: "h-20 leading-_5rem_ bg-slate-700 text-white",
       onClick: getNewsMessages,
@@ -159,6 +177,10 @@ function Index() {
       altClassName: "h-20 leading-_5rem_ bg-slate-700 text-white",
       onClick: useLogin,
       children: "\u70B9\u51FB\u5220\u9664\u7528\u6237\u52A8\u6001"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_cross_platform__WEBPACK_IMPORTED_MODULE_3__.View, {
+      altClassName: "h-20 leading-_5rem_ bg-slate-700 text-white",
+      onClick: cleanUserMsg,
+      children: "\u70B9\u51FB\u6E05\u9664\u7528\u6237\u7684token\u76F8\u5173\u4FE1\u606F"
     })]
   });
 }

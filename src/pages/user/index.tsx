@@ -7,6 +7,8 @@ import { View, Image } from '../../components/cross-platform'
 
 
 export default function User() {
+  console.log('来了user页面');
+  
   // 用户信息数据
   const [userInfo, setUserInfo] = useState({
     account: 'This is RN project ~',
@@ -16,18 +18,22 @@ export default function User() {
   // 设置单行省略号(  )
   const textEllipsis = env == 'WEAPP' ? 'whitespace-nowrap overflow-ellipsis truncate' : ''
 
+  // 获取页面路径
+  const path = Taro.Current.router?.path
+
   // 获取本地存储的 userInfo 数据
   useEffect(() => {
     const getUserInfo = async () => {
       try {
         const { data } = await Taro.getStorage({ key: 'userInfo' });
         setUserInfo((prevUserInfo) => ({ ...prevUserInfo, account: data.account }));
+        console.log('获取用户信息成功');
       } catch (error) {
         console.error('获取用户信息失败', error);
       }
     };
     getUserInfo();
-  }, []); // 空依赖数组表示只在组件挂载时执行一次
+  }, [path]); // 空依赖数组表示只在组件挂载时执行一次
 
   return (
     <View altClassName='min-h-full'>
